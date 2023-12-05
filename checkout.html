@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>99 Store</title>
+    <link
+      type="image/png"
+      sizes="96x96"
+      rel="icon"
+      href="./assets/imgs/favicon/icons8-shop-arrow-96.png"
+    />
+    <link rel="stylesheet" href="./assets/custom.css" />
+    <link rel="stylesheet" href="./assets/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="page" class="site page-cart">
+      <!-- Aside Offcanvas -->
+      <div class="container">
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasAside"
+          aria-labelledby="offcanvasAsideLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasAsideLabel">
+              <span class="logo ms-3 me-5"
+                ><a href="index.html">.Store</a></span
+              >
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="title">All Departments</div>
+            <div class="offcanvas-departments"></div>
+            <nav class="offcanvas-nav"></nav>
+            <nav class="offcanvas-top-nav"></nav>
+            <div class="region">
+              <ul class="currency">
+                <li class="active"><a href="#">USD</a></li>
+                <li><a href="#">EUR</a></li>
+                <li><a href="#">GBP</a></li>
+                <li><a href="#">VND</a></li>
+              </ul>
+              <ul class="language">
+                <li class="active"><a href="#">English</a></li>
+                <li><a href="#">German</a></li>
+                <li><a href="#">Spanish</a></li>
+                <li><a href="#">Vietnamese</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Header -->
+      <header>
+        <!-- Header top -->
+        <div class="header-top d-none d-lg-block">
+          <div class="container">
+            <div class="row py-2 aside-column">
+              <div class="col g-0">
+                <ul class="header-top-left navbar-nav">
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Featured Products</a></li>
+                  <li><a href="#">Wishlist</a></li>
+                </ul>
+              </div>
+              <div class="col g-0">
+                <ul class="header-top-right navbar-nav">
+                  <li><a href="#">Sign up</a></li>
+                  <li><a href="#">My Account</a></li>
+                  <li><a href="#">Order Tracking</a></li>
+                  <li class="has-child">
+                    <a href="#">
+                      USD
+                      <span><i class="ri-arrow-down-s-line"></i></span
+                    ></a>
+                    <ul class="border">
+                      <li class="current"><a href="#">USD</a></li>
+                      <li><a href="#">EUR</a></li>
+                      <li><a href="#">GBP</a></li>
+                      <li><a href="#">VND</a></li>
+                    </ul>
+                  </li>
+                  <li class="has-child">
+                    <a href="#">
+                      English
+                      <span><i class="ri-arrow-down-s-line"></i></span
+                    ></a>
+                    <ul class="border">
+                      <li class="current"><a href="#">English</a></li>
+                      <li><a href="#">German</a></li>
+                      <li><a href="#">Spanish</a></li>
+                      <li><a href="#">Vietnamese</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Header navbar -->
+        <div class="header-nav">
+          <div class="container">
+            <div class="row py-3">
+              <div class="col-8 g-0 d-flex align-items-center">
+                <a
+                  class="menu-item px-3 fs-4 d-lg-none"
+                  data-bs-toggle="offcanvas"
+                  href="#offcanvasAside"
+                  role="button"
+                  aria-controls="offcanvasAside"
+                  ><i class="ri-menu-2-line"></i
+                ></a>
+                <span class="logo ms-3 me-5"
+                  ><a href="index.html">.Store</a></span
+                >
+
+                <nav class="d-none d-lg-block">
+                  <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="page-category.html">Shop</a></li>
+                    <li class="has-child">
+                      <a href="#">
+                        Woman
+                        <span class="icon-small"
+                          ><i class="ri-arrow-down-s-line"></i
+                        ></span>
+                      </a>
+                      <div class="mega">
+                        <div class="container">
+                          <div class="col-8 category">
+                            <div class="row">
+                              <div class="col-lg-3 col-12 mb-2 mb-lg-0">
+                                <div class="fw-bold pb-lg-2">
+                                  WOMEN'S CLOTHINGS
+                                </div>
+                                <ul>
+                                  <li><a href="#">Dresses</a></li>
+                                  <li><a href="#">Tops & Tees</a></li>
+                                  <li><a href="#">Jackets & Coats</a></li>
+                                  <li><a href="#">Pains & Capris</a></li>
+                                  <li><a href="#">Sweaters</a></li>
+                                  <li><a href="#">Costumes</a></li>
+                                  <li>
+                                    <a href="#">Hoodies & Sweatshirts</a>
+                                  </li>
+                                  <li><a href="#">Pajamas & Robes</a></li>
+                                  <li><a href="#">Shorts</a></li>
+                                  <li><a href="#">Swimwear</a></li>
+                                </ul>
+                              </div>
+                              <div class="col-lg-3 col-12 mb-2 mb-lg-0">
+                                <div class="fw-bold pb-lg-2">JEWELRY</div>
+                                <ul>
+                                  <li><a href="#">Accessories</a></li>
+                                  <li><a href="#">Bags & Purses</a></li>
+                                  <li><a href="#">Necklaces</a></li>
+                                  <li><a href="#">Rings</a></li>
+                                  <li><a href="#">Earrings</a></li>
+                                  <li><a href="#">Bracelets</a></li>
+                                  <li><a href="#">Body Jewelry</a></li>
+                                </ul>
+                              </div>
+                              <div class="col-lg-3 col-12 mb-2 mb-lg-0">
+                                <div class="fw-bold pb-lg-2">BEAUTY</div>
+                                <ul>
+                                  <li><a href="#">Bath Accessories</a></li>
+                                  <li><a href="#">Makeup & Cosmetics</a></li>
+                                  <li><a href="#">Skin Care</a></li>
+                                  <li><a href="#">Hair Care</a></li>
+                                  <li><a href="#">Essential Oils</a></li>
+                                  <li><a href="#">Fragrances</a></li>
+                                  <li><a href="#">Soaps & Bath Bombs</a></li>
+                                  <li>
+                                    <a href="#">Face Marks & Coverings</a>
+                                  </li>
+                                  <li><a href="#">Spa Kits & Gifts</a></li>
+                                </ul>
+                              </div>
+                              <div class="col-lg-3 col-12 mb-2 mb-lg-0">
+                                <div class="fw-bold pb-lg-2">TOP BRANDS</div>
+                                <ul class="women-brands">
+                                  <li><a href="#">Nike</a></li>
+                                  <li><a href="#">Luis Vuitton</a></li>
+                                  <li><a href="#">Hermes</a></li>
+                                  <li><a href="#">Gucci</a></li>
+                                  <li><a href="#">Zalando</a></li>
+                                  <li><a href="#">Tiffany & Co.</a></li>
+                                  <li><a href="#">Zara</a></li>
+                                  <li><a href="#">H&M</a></li>
+                                  <li><a href="#">Cartier</a></li>
+                                  <li><a href="#">Chanel</a></li>
+                                  <li><a href="#">Hurley</a></li>
+                                </ul>
+                                <div class="view-all">
+                                  <a href="#">
+                                    View all brands
+                                    <span
+                                      ><i class="ri-arrow-right-line"></i
+                                    ></span>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="col-4 d-none d-lg-block position-relative"
+                          >
+                            <div class="media">
+                              <img
+                                src="./assets/imgs/products/apparel4.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="text-content">
+                              <div>MOST WANTED!</div>
+                              <button type="button" class="btn btn-primary">
+                                Order Now
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="#">Man</a></li>
+                    <li class="has-item">
+                      <a href="#">Sports </a>
+                      <div class="fly-item">New!</div>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+              <div class="col-4 g-0 d-flex justify-content-end">
+                <ul class="d-flex gap-3 align-items-center lh-sm px-3 px-lg-0">
+                  <li class="d-none d-lg-flex">
+                    <a href="#" class="px-2">
+                      <div class="position-relative">
+                        <span
+                          ><i class="ri-heart-line fs-4 fw-semibold"></i
+                        ></span>
+                        <span class="quantity-item">0</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="has-child cart">
+                    <a href="#" class="px-2 d-flex gap-3">
+                      <div class="position-relative">
+                        <span
+                          ><i class="ri-shopping-cart-line fs-4 fw-semibold"></i
+                        ></span>
+                        <span class="quantity-item">5</span>
+                      </div>
+                      <div>
+                        <div class="total">Total</div>
+                        <div>$1,622</div>
+                      </div>
+                    </a>
+                    <div class="cart-mini">
+                      <div class="cart-header">
+                        <h6>5 items in cart</h6>
+                      </div>
+                      <div class="cart-body">
+                        <div class="cart-item d-flex">
+                          <div class="item-img">
+                            <a href="#"
+                              ><img
+                                src="./assets/imgs/products/home2.jpg"
+                                alt=""
+                            /></a>
+                          </div>
+                          <div class="item-info flex-grow-1 mx-3">
+                            <div class="name fw-medium mb-3">
+                              <a href="#">Dimmable Ceiling Light Modern</a>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                              <span class="price fs-6">$279.99</span
+                              ><span>x2</span>
+                            </div>
+                          </div>
+                          <div class="item-remove">
+                            <button type="button" class="btn-close"></button>
+                          </div>
+                        </div>
+                        <div class="cart-item d-flex">
+                          <div class="item-img">
+                            <a href="#"
+                              ><img
+                                src="./assets/imgs/products/home3.jpg"
+                                alt=""
+                            /></a>
+                          </div>
+                          <div class="item-info flex-grow-1 mx-3">
+                            <div class="name fw-medium mb-3">
+                              <a href="#"
+                                >Modern Storage Cabinet with Door & 3 Drawers</a
+                              >
+                            </div>
+                            <div class="d-flex justify-content-between">
+                              <span class="price fs-6">$129.99</span
+                              ><span>x1</span>
+                            </div>
+                          </div>
+                          <div class="item-remove">
+                            <button type="button" class="btn-close"></button>
+                          </div>
+                        </div>
+                        <div class="cart-item d-flex">
+                          <div class="item-img">
+                            <a href="#"
+                              ><img
+                                src="./assets/imgs/products/home4.jpg"
+                                alt=""
+                            /></a>
+                          </div>
+                          <div class="item-info flex-grow-1 mx-3">
+                            <div class="name fw-medium mb-3">
+                              <a href="#">Vonanda Velvet Sofa Couch</a>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                              <span class="price fs-6">$352.99</span
+                              ><span>x1</span>
+                            </div>
+                          </div>
+                          <div class="item-remove">
+                            <button type="button" class="btn-close"></button>
+                          </div>
+                        </div>
+                        <div class="cart-item d-flex">
+                          <div class="item-img">
+                            <a href="#"
+                              ><img
+                                src="./assets/imgs/products/home5.jpg"
+                                alt=""
+                            /></a>
+                          </div>
+                          <div class="item-info flex-grow-1 mx-3">
+                            <div class="name fw-medium mb-3">
+                              <a href="#">Awesome Bed for a Couple</a>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                              <span class="price fs-6">$579.99</span
+                              ><span>x1</span>
+                            </div>
+                          </div>
+                          <div class="item-remove">
+                            <button type="button" class="btn-close"></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cart-footer d-flex flex-column my-3">
+                        <div class="fw-medium">Subtotal</div>
+                        <div class="fs-3 fw-bold mb-3">$1,622.95</div>
+                        <a href="checkout.html">
+                          <button
+                            type="button"
+                            class="btn btn-primary mb-2 py-2 w-100"
+                          >
+                            Checkout
+                          </button>
+                        </a>
+                        <a href="cart.html">
+                          <button
+                            type="button"
+                            class="btn btn-secondary-dark py-2 w-100"
+                          >
+                            View Cart
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Header main -->
+        <div class="header-search d-none d-lg-block">
+          <div class="container h-100">
+            <div class="row h-100 justify-content-between">
+              <div class="col-3 p-0 d-flex align-items-end">
+                <div
+                  class="left py-2 px-3 d-flex justify-content-between align-items-center flex-grow-1 text-white bg-primary"
+                >
+                  <div>
+                    <div>All Departments</div>
+                    <div class="total-products">Total 1059 Products</div>
+                  </div>
+                  <div>
+                    <a href="#0" class="department-toggle fs-5"
+                      ><i class="ri-menu-3-line"></i
+                      ><i class="ri-close-line"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 p-0 d-flex align-items-center">
+                <div class="input-group">
+                  <label
+                    for="search-input"
+                    class="input-group-text search-item"
+                  >
+                    <span><i class="ri-search-line"></i></span>
+                  </label>
+                  <input
+                    id="search-input"
+                    class="form-control"
+                    type="text"
+                    placeholder="Search for products"
+                  />
+                  <button class="input-group-text btn btn-primary search-btn">
+                    Search
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-with-slider">
+          <div class="container">
+            <div class="row position-relative">
+              <div class="sidebar col-3 position-absolute">
+                <ul>
+                  <li class="has-child">
+                    <a
+                      href="#"
+                      class="sidebar-title d-flex justify-content-between"
+                      ><div>
+                        <span><i class="ri-bear-smile-line"></i></span>Beauty
+                      </div>
+                      <span class="pe-0 icon-small"
+                        ><i class="ri-arrow-right-s-line"></i></span
+                    ></a>
+                    <div class="mega mega-1">
+                      <ul class="p-3 position-relative">
+                        <li>Makeup</li>
+                        <li>Skin Care</li>
+                        <li>Hair Care</li>
+                        <li>Fragrance</li>
+                        <li>Foot & Hand Care</li>
+                        <li>Tools & Accessories</li>
+                        <li>Shave & Hair Removal</li>
+                        <li>Personal Care</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="has-child">
+                    <a
+                      href="#"
+                      class="sidebar-title d-flex justify-content-between"
+                      ><div>
+                        <span><i class="ri-bluetooth-connect-line"></i></span
+                        >Electronic
+                      </div>
+                      <span class="pe-0 icon-small"
+                        ><i class="ri-arrow-right-s-line"></i></span
+                    ></a>
+                    <div class="mega mega-2">
+                      <ul class="p-3 position-relative">
+                        <li>Camera</li>
+                        <li>Cell Phones</li>
+                        <li>Computers</li>
+                        <li>GPS & Navigation</li>
+                        <li>Headphones</li>
+                        <li>Home Audio</li>
+                        <li>Television</li>
+                        <li>Video Projectors</li>
+                        <li>Wearable Technology</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="has-child">
+                    <a
+                      href="#"
+                      class="sidebar-title d-flex justify-content-between"
+                      ><div>
+                        <span><i class="ri-t-shirt-2-line"></i></span>Women's
+                        Fashion
+                      </div>
+                      <span class="pe-0 icon-small"
+                        ><i class="ri-arrow-right-s-line"></i></span
+                    ></a>
+                    <div class="mega mega-3">
+                      <ul class="p-3 position-relative">
+                        <li>Clothing</li>
+                        <li>Shoes</li>
+                        <li>Jewelry</li>
+                        <li>Watches</li>
+                        <li>Handbags</li>
+                        <li>Accessories</li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sidebar-title d-flex justify-content-between">
+                      <a href="#"
+                        ><span><i class="ri-shirt-line"></i></span>Men's
+                        Fashion</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sidebar-title d-flex justify-content-between">
+                      <a href="#"
+                        ><span><i class="ri-women-line"></i></span>Girl's
+                        Fashion</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sidebar-title d-flex justify-content-between">
+                      <a href="#"
+                        ><span><i class="ri-men-line"></i></span>Boy's
+                        Fashion</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sidebar-title d-flex justify-content-between">
+                      <a href="#"
+                        ><span><i class="ri-heart-pulse-line"></i></span>Health
+                        & Household</a
+                      >
+                    </div>
+                  </li>
+                  <li class="has-child">
+                    <a
+                      href="#"
+                      class="sidebar-title d-flex justify-content-between"
+                      ><div>
+                        <span><i class="ri-home-8-line"></i></span>Home &
+                        Kitchen
+                      </div>
+                      <span class="pe-0 icon-small"
+                        ><i class="ri-arrow-right-s-line"></i></span
+                    ></a>
+                    <div class="mega-large">
+                      <div class="mega-large-wrap row p-3 position-relative">
+                        <div class="col-lg-4 col-12">
+                          <ul>
+                            <span class="fw-medium" style="font-size: 13px"
+                              >Kitchen & Dining</span
+                            >
+                            <li>Kitchen</li>
+                            <li>Dining Room</li>
+                            <li>Panty</li>
+                            <li>Great Room</li>
+                            <li>Breakfast Nook</li>
+                          </ul>
+                          <ul>
+                            <span class="fw-medium" style="font-size: 13px"
+                              >Living</span
+                            >
+                            <li>Living Room</li>
+                            <li>Family Room</li>
+                            <li>Sunroom</li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                          <ul>
+                            <span class="fw-medium" style="font-size: 13px"
+                              >Bed & Bath</span
+                            >
+                            <li>Bathroom</li>
+                            <li>Powder Room</li>
+                            <li>Bedroom</li>
+                            <li>Storage & Closet</li>
+                            <li>Baby & kids</li>
+                          </ul>
+                          <ul>
+                            <span class="fw-medium" style="font-size: 13px"
+                              >Utility</span
+                            >
+                            <li>Laundry</li>
+                            <li>Garage</li>
+                            <li>Mudroom</li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                          <ul>
+                            <span class="fw-medium" style="font-size: 13px"
+                              >Outdoor</span
+                            >
+                            <li>Landscape</li>
+                            <li>Patio</li>
+                            <li>Desk</li>
+                            <li>Pool</li>
+                            <li>Backyard</li>
+                            <li>Porch</li>
+                            <li>Exterior</li>
+                            <li>Outdoor Kitchen</li>
+                            <li>Front Yard</li>
+                            <li>Driveway</li>
+                            <li>Poolhouse</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sidebar-title d-flex justify-content-between">
+                      <a href="#"
+                        ><span><i class="ri-android-line"></i></span>Pet
+                        Supplies</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sidebar-title d-flex justify-content-between">
+                      <a href="#"
+                        ><span><i class="ri-basketball-line"></i></span
+                        >Sports</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <div class="sidebar-title d-flex justify-content-between">
+                      <a href="#"
+                        ><span><i class="ri-shield-star-fill"></i></span>Best
+                        Seller</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main -->
+      <main>
+        <div class="container">
+          <div class="row my-5 checkout">
+            <div class="col-lg-6 col-12 mb-4 mb-lg-0 checkout-form">
+              <form action="">
+                <h2 class="mb-5">Shipping Address</h2>
+                <p>
+                  <label for="email">Email Address <span></span></label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    autocomplete="off"
+                    required
+                  />
+                </p>
+                <p>
+                  <label for="fname">First Name <span></span></label>
+                  <input type="text" id="fname" required />
+                </p>
+                <p>
+                  <label for="lname">Last Name <span></span></label>
+                  <input type="text" id="lname" required />
+                </p>
+                <p>
+                  <label for="cname">Company Name</label>
+                  <input type="text" id="cname" />
+                </p>
+                <p>
+                  <label for="address">Street Address <span></span></label>
+                  <input type="text" id="address" required />
+                </p>
+                <p>
+                  <label for="city">City <span></span></label>
+                  <input type="text" id="city" required />
+                </p>
+                <p>
+                  <label for="state">State/Province</label>
+                  <input type="text" id="state" />
+                </p>
+                <p>
+                  <label for="postal">Zip/Postal Code <span></span></label>
+                  <input type="number" id="postal" required />
+                </p>
+                <p>
+                  <label for="country">Country</label>
+                  <select name="country" id="country">
+                    <option value="ger">Germany</option>
+                    <option value="frc">France</option>
+                    <option value="usa" selected="selected">
+                      United States
+                    </option>
+                    <option value="vie">Vietnam</option>
+                    <option value="other">Other</option>
+                  </select>
+                </p>
+                <p>
+                  <label for="phone">Phone Number <span></span></label>
+                  <input type="number" id="phone" required />
+                </p>
+                <p>
+                  <label for="note">Order Note (Optional)</label>
+                  <textarea
+                    cols="30"
+                    rows="5"
+                    placeholder="Notes about your order, e.g. special notes for delivery."
+                  ></textarea>
+                </p>
+                <p class="checkset">
+                  <input type="checkbox" id="anaccount" />
+                  <label for="anaccount">Create an account?</label>
+                </p>
+                <div>
+                  <h2 class="fw-bold mb-4">Shipping Methods</h2>
+                  <p class="checkset">
+                    <input type="radio" checked />
+                    <label>$10.00 Flat Rate</label>
+                  </p>
+                </div>
+                <div class="d-flex justify-content-center mt-5">
+                  <a href="#" class="w-50">
+                    <button class="btn btn-primary">Place Order</button>
+                  </a>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="ms-5 order-summary is-sticky">
+                <div class="price-summary">
+                  <h2 class="fw-bold mb-4">Order Summary</h2>
+                  <div class="d-flex justify-content-between mb-2">
+                    <div class="fw-semibold opacity-50">Subtotal</div>
+                    <div class="fw-medium">$1622.95</div>
+                  </div>
+                  <div class="d-flex justify-content-between mb-2">
+                    <div class="fw-semibold opacity-50">Discount</div>
+                    <div class="fw-medium">-$100</div>
+                  </div>
+                  <div class="d-flex justify-content-between mb-2">
+                    <div class="fw-semibold opacity-50">Shipping: Flat</div>
+                    <div class="fw-medium">$10.00</div>
+                  </div>
+                  <div class="d-flex justify-content-between mb-2 mt-4">
+                    <div class="fw-semibold">Total</div>
+                    <h3 class="fw-bold">$1532.95</h3>
+                  </div>
+                </div>
+                <div class="mt-5 cart-summary">
+                  <div class="cart-item d-flex">
+                    <div class="item-img">
+                      <a href="#"
+                        ><img src="./assets/imgs/products/home2.jpg" alt=""
+                      /></a>
+                    </div>
+                    <div class="item-info flex-grow-1 mx-3">
+                      <div class="name fw-medium mb-2">
+                        <a href="#">Dimmable Ceiling Light Modern</a>
+                      </div>
+                      <div class="price opacity-75">$279.99</div>
+                      <div class="opacity-75">x 2</div>
+                    </div>
+                  </div>
+                  <div class="cart-item d-flex">
+                    <div class="item-img">
+                      <a href="#"
+                        ><img src="./assets/imgs/products/home3.jpg" alt=""
+                      /></a>
+                    </div>
+                    <div class="item-info flex-grow-1 mx-3">
+                      <div class="name fw-medium mb-2">
+                        <a href="#"
+                          >Modern Storage Cabinet with Door & 3 Drawers</a
+                        >
+                      </div>
+                      <div class="price opacity-75">$129.99</div>
+                      <div class="opacity-75">x 1</div>
+                    </div>
+                  </div>
+                  <div class="cart-item d-flex">
+                    <div class="item-img">
+                      <a href="#"
+                        ><img src="./assets/imgs/products/home4.jpg" alt=""
+                      /></a>
+                    </div>
+                    <div class="item-info flex-grow-1 mx-3">
+                      <div class="name fw-medium mb-2">
+                        <a href="#">Vonanda Velvet Sofa Couch</a>
+                      </div>
+                      <div class="price opacity-75">$352.99</div>
+                      <div class="opacity-75">x 1</div>
+                    </div>
+                  </div>
+                  <div class="cart-item d-flex">
+                    <div class="item-img">
+                      <a href="#"
+                        ><img src="./assets/imgs/products/home5.jpg" alt=""
+                      /></a>
+                    </div>
+                    <div class="item-info flex-grow-1 mx-3">
+                      <div class="name fw-medium mb-2">
+                        <a href="#">Awesome Bed for a Couple</a>
+                      </div>
+                      <div class="price opacity-75">$579.99</div>
+                      <div class="opacity-75">x 1</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-head">
+          <div class="container">
+            <div class="row py-4 justify-content-between">
+              <div class="col-lg-5 col-12 mb-3 mb-lg-0 text-white">
+                <h5>Join Our Newsletter</h5>
+                <div>
+                  <span class="fw-light"
+                    >Get E-mail updates about our latest shop and </span
+                  ><a href="page-offer.html" class="text-primary fw-medium"
+                    >special offer</a
+                  >
+                </div>
+              </div>
+              <div
+                class="col-lg-5 col-12 d-flex flex-column justify-content-center"
+              >
+                <div class="input-group">
+                  <label for="mail-input" class="input-group-text mail-item">
+                    <span><i class="ri-mail-line"></i></span>
+                  </label>
+                  <input
+                    id="mail-input"
+                    class="form-control"
+                    type="text"
+                    placeholder="Your email address"
+                  />
+                  <button class="input-group-text btn-primary btn">
+                    Sign up
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-body">
+          <div class="container">
+            <div class="row py-5">
+              <div class="col-lg-3 col-12 mb-lg-0 mb-3">
+                <h6 class="fw-semibold">Help & Contact</h6>
+                <ul class="opacity-75 lh-lg">
+                  <li><a href="#">Your Account</a></li>
+                  <li><a href="#">Your Orders</a></li>
+                  <li><a href="#">Shipping Rates</a></li>
+                  <li><a href="#">Returns</a></li>
+                  <li><a href="#">Assistant</a></li>
+                  <li><a href="#">Help</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-12 mb-lg-0 mb-3">
+                <h6 class="fw-semibold">Product Categories</h6>
+                <ul class="opacity-75 lh-lg">
+                  <li><a href="#">Beauty</a></li>
+                  <li><a href="#">Electronic</a></li>
+                  <li><a href="#">Women's Fashion</a></li>
+                  <li><a href="#">Men's Fashion</a></li>
+                  <li><a href="#">Girl's Fashion</a></li>
+                  <li><a href="#">Boy's Fashion</a></li>
+                  <li><a href="#">Health & Household</a></li>
+                  <li><a href="#">Home & Kitchen</a></li>
+                  <li><a href="#">Pet Supplies</a></li>
+                  <li><a href="#">Sports</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-12 mb-lg-0 mb-3">
+                <h6 class="fw-semibold">Payment Info</h6>
+                <ul class="opacity-75 lh-lg">
+                  <li><a href="#">Business Card</a></li>
+                  <li><a href="#">Shop With Points</a></li>
+                  <li><a href="#">Reload Yor Balance</a></li>
+                  <li><a href="#">Paypal</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-12 mb-lg-0 mb-3">
+                <h6 class="fw-semibold">About Us</h6>
+                <ul class="opacity-75 lh-lg">
+                  <li><a href="#">Company Info</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Investors</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Policies</a></li>
+                  <li><a href="#">Customer Reviews</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-foot mb-lg-0 mb-5">
+          <div class="container">
+            <div class="row py-5 text-center">
+              <div class="mb-4"><span class="logo">.Store</span></div>
+              <div class="footer-brands-logo">
+                <ul class="d-flex justify-content-center">
+                  <li>
+                    <a href="#"
+                      ><span><i class="ri-twitter-line"></i></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span><i class="ri-facebook-line"></i></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span><i class="ri-instagram-line"></i></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span><i class="ri-linkedin-line"></i></span
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><span><i class="ri-youtube-line"></i></span
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="copyright opacity-75">
+                Copyright 2023
+                <span><i class="ri-copyright-line"></i></span> .Store. All right
+                reserved.
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Menu on mobile -->
+      <div class="menu-mobile d-lg-none d-block">
+        <ul class="d-flex justify-content-between h-100">
+          <li>
+            <a href="#">
+              <span><i class="ri-bar-chart-line"></i></span>
+              <span>Trending</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="ri-user-line"></i></span>
+              <span>Account</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="ri-heart-line"></i></span>
+              <span>Wishlist</span>
+            </a>
+          </li>
+          <li>
+            <a href="#0" class="search-btn-mobile">
+              <span><i class="ri-search-line"></i></span>
+              <span>Search</span>
+            </a>
+          </li>
+          <li>
+            <a href="#0" class="cart-btn-mobile">
+              <span class="position-relative"
+                ><i class="ri-shopping-cart-line"></i
+                ><span class="quantity-item">5</span></span
+              >
+              <span>Cart</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Search on mobile -->
+      <div class="search-mobile d-none d-lg-none">
+        <div class="input-group">
+          <label for="search-input-mobile" class="input-group-text search-item">
+            <span><i class="ri-search-line"></i></span>
+          </label>
+          <input
+            id="search-input-mobile"
+            class="form-control"
+            type="text"
+            placeholder="Search for products"
+          />
+          <button class="input-group-text btn btn-primary">Search</button>
+        </div>
+        <a href="#0" class="close-search-btn"
+          ><span><i class="ri-close-line"></i></span
+        ></a>
+      </div>
+
+      <!-- Back to top button -->
+      <div class="back-to-top">
+        <a href="#">
+          <i class="ri-arrow-up-line"></i>
+          <span>Top</span>
+        </a>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.4.1/index.js"></script>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
